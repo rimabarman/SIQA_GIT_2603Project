@@ -24,6 +24,7 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: SIQACloudStreamsTests
+  version: "1.0"
   gitServerName: SIQAGitHub
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
@@ -77,6 +78,34 @@ services:
     version: 12.0.0.0.17
   - name: SIQACloudStreamsTests
     version: "1.0"
+- serviceName: project.siqa_git_2603.integrations:deepclonetest
+  packages:
+  - name: SIQA_GIT_2603Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: pub.string:stringToBytes
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.807
+- serviceName: pub.utils:deepClone
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.807
+- serviceName: pub.string:bytesToString
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.807
 - serviceName: project.siqa_git_2603.integrations:testjms
   packages:
   - name: SIQA_GIT_2603Project
