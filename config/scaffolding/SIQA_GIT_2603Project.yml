@@ -40,9 +40,15 @@ packages:
   gitUsername: rimabarman
   gitBranch: main
 - name: JMSTest
+  version: "1.0"
   gitServerName: rimaSCName
   gitUrl: https://github.com/prabhakarsag
   gitUsername: rimabarman
+  gitBranch: main
+- name: SSL_JDBC_Test
+  gitServerName: prabhakaribm
+  gitUrl: https://github.com/prabhakaribm
+  gitUsername: prabhakaribm
   gitBranch: main
 services:
 - serviceName: project.siqa_git_2603.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1_2603
@@ -52,6 +58,8 @@ services:
   - name: JMS2waySSL
     version: "1.0"
   - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
     version: "1.0"
   - name: JMSTest
     version: "1.0"
@@ -75,6 +83,8 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
   - name: SIQAJDBCAdapterTests
@@ -97,6 +107,8 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
   - name: SIQAJDBCAdapterTests
@@ -118,6 +130,8 @@ services:
   - name: JMS2waySSL
     version: "1.0"
   - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
     version: "1.0"
   - name: JMSTest
     version: "1.0"
@@ -149,6 +163,8 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
   - name: SIQAJDBCAdapterTests
@@ -170,6 +186,8 @@ services:
   - name: JMS2waySSL
     version: "1.0"
   - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
     version: "1.0"
   - name: JMSTest
     version: "1.0"
@@ -193,6 +211,8 @@ services:
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
   - name: JMSTest
     version: "1.0"
   - name: SIQAJDBCAdapterTests
@@ -214,6 +234,8 @@ services:
   - name: JMS2waySSL
     version: "1.0"
   - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
     version: "1.0"
   - name: JMSTest
     version: "1.0"
@@ -252,6 +274,8 @@ services:
   - name: JMS2waySSL
     version: "1.0"
   - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
     version: "1.0"
   - name: JMSTest
     version: "1.0"
