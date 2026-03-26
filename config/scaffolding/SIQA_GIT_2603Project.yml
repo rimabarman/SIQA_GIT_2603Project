@@ -46,6 +46,7 @@ packages:
   gitUsername: rimabarman
   gitBranch: main
 - name: SSL_JDBC_Test
+  version: "1.0"
   gitServerName: prabhakaribm
   gitUrl: https://github.com/prabhakaribm
   gitUsername: prabhakaribm
@@ -123,7 +124,55 @@ services:
     version: "1.0"
   - name: WmSalesforceRESTProvider
     version: 12.0.0.0.16
-- serviceName: project.siqa_git_2603.integrations:Sum
+- serviceName: project.siqa_git_2603.integrations:Call_refData
+  packages:
+  - name: SIQA_GIT_2603Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.16
+- serviceName: project.siqa_git_2603.referencedata:refData
+  packages:
+  - name: SIQA_GIT_2603Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.16
+- serviceName: project.siqa_git_2603.integrations:Copy_Sum
   packages:
   - name: SIQA_GIT_2603Project
     version: "1.0"
@@ -155,6 +204,30 @@ services:
   packages:
   - name: WmPublic
     version: 12.1.0.0.807
+- serviceName: project.siqa_git_2603.integrations:Sum
+  packages:
+  - name: SIQA_GIT_2603Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SSL_JDBC_Test
+    version: "1.0"
+  - name: JMSTest
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.16
 - serviceName: project.siqa_git_2603.integrations:Test_AdapterSacffolding
   packages:
   - name: SIQA_GIT_2603Project
