@@ -45,15 +45,68 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">Rima.Barman@ibm.com</value>
-    <value name="createdDate">1774508117828</value>
-    <value name="lastModifiedDate">1774508117828</value>
+    <value name="lastModifiedBy">Rima.Barman@ibm.com</value>
+    <value name="lastModifiedDate">1774508467983</value>
     <value name="displayName">Test_SoapConnector</value>
     <value name="description"></value>
+    <array name="appList" type="record" depth="1">
+      <record javaclass="com.wm.util.Values">
+        <value name="providerName">WmSalesforceProvider</value>
+        <value name="id">com.webmethods.cloudstreams.salesforce_v53</value>
+      </record>
+    </array>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
       <record name="/0" javaclass="com.wm.util.Values">
-        <value name="itemType">ALL</value>
-        <value name="name">NEW</value>
+        <value name="name">Salesforce® CRM SOAP</value>
+        <value name="itemType">APPS</value>
+        <record name="operation" javaclass="com.wm.util.Values">
+          <value name="operationName">TestSoap</value>
+          <value name="isCustom">true</value>
+          <value name="operationType">actions</value>
+          <value name="connectionType">sagcloud</value>
+          <value name="projectName">project.siqa_git_2603</value>
+        </record>
+        <value name="id">com.webmethods.cloudstreams.salesforce_v53</value>
+        <value name="providerName">WmSalesforceProvider</value>
+        <value name="allowCustomOperations">true</value>
+        <value name="appType">predefined</value>
+        <Boolean name="hasAccount">true</Boolean>
+        <record name="connection" javaclass="com.wm.util.Values">
+          <value name="connectionName">SoapConnAlias</value>
+          <value name="connectionType"></value>
+          <null name="description"/>
+        </record>
+        <value name="connectionNSName">project.siqa_git_2603.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.connections:SoapConnAlias</value>
+        <value name="connectionType"></value>
+        <value name="type">SOAP</value>
+        <value name="version">53.1</value>
+        <value name="packageName">WmSalesforceProvider</value>
+        <value name="description">Salesforce, using the Partner SOAP API version 53, supports all business objects (for example, Account) and operations including any customizations done on the Salesforce instance. It also supports Salesforce analytics using wave.</value>
+        <value name="extensionName">WmSalesforceProviderExt</value>
+        <null name="certified"/>
+        <value name="registry">supported</value>
+        <value name="category">connector</value>
+        <value name="registeredDate">21/10/2025</value>
+        <Boolean name="installed">true</Boolean>
+        <Boolean name="latest">true</Boolean>
+        <Boolean name="allowDeleteApplication">false</Boolean>
+        <Boolean name="allowUpdateApplication">false</Boolean>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="inputMap" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="outputMap" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <Boolean name="accountReferenceResolved">true</Boolean>
       </record>
     </record>
   </record>
