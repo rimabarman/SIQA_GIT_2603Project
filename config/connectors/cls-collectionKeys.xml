@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <services>
-    <cloudstreamsCollectionKeys serviceName="WmCloudStreams.RestVS">
+    <cloudstreamsCollectionKeys serviceName="WmCloudStreams.SoapVS">
         <servicesKeys>
-            <keyDetails collectionKey="project.siqa_git_2603.WmSalesforceRESTProvider.com_webmethods_cloudstreams_salesforce_rest_v60.operations.actions:TestRest" connectorServiceName="project.siqa_git_2603.WmSalesforceRESTProvider.com_webmethods_cloudstreams_salesforce_rest_v60.operations.actions:TestRest"/>
+            <keyDetails collectionKey="project.siqa_git_2603.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:TestSoap" connectorServiceName="project.siqa_git_2603.WmSalesforceProvider.com_webmethods_cloudstreams_salesforce_v53.operations.actions:TestSoap"/>
         </servicesKeys>
     </cloudstreamsCollectionKeys>
 </services>
