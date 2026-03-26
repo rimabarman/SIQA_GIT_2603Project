@@ -30,12 +30,20 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: WmSalesforceRESTProvider
+  version: 12.0.0.0.16
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
+- name: JMS2waySSL
+  gitServerName: rimaSCName
+  gitUrl: https://github.com/prabhakarsag
+  gitUsername: rimabarman
+  gitBranch: main
 services:
 - serviceName: project.siqa_git_2603.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:Database_1_2603
   packages:
   - name: SIQA_GIT_2603Project
+    version: "1.0"
+  - name: JMS2waySSL
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -55,6 +63,8 @@ services:
   packages:
   - name: SIQA_GIT_2603Project
     version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SIQAJDBCAdapterTests
@@ -73,6 +83,8 @@ services:
   packages:
   - name: SIQA_GIT_2603Project
     version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SIQAJDBCAdapterTests
@@ -90,6 +102,8 @@ services:
 - serviceName: project.siqa_git_2603.integrations:Sum
   packages:
   - name: SIQA_GIT_2603Project
+    version: "1.0"
+  - name: JMS2waySSL
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -117,6 +131,48 @@ services:
   packages:
   - name: SIQA_GIT_2603Project
     version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.16
+- serviceName: project.siqa_git_2603.integrations:Test_RestConnector
+  packages:
+  - name: SIQA_GIT_2603Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+  - name: WmSalesforceRESTProvider
+    version: 12.0.0.0.16
+- serviceName: project.siqa_git_2603.WmSalesforceRESTProvider.com_webmethods_cloudstreams_salesforce_rest_v60.operations.actions:TestRest
+  packages:
+  - name: SIQA_GIT_2603Project
+    version: "1.0"
+  - name: JMS2waySSL
+    version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
   - name: SIQAJDBCAdapterTests
@@ -134,6 +190,8 @@ services:
 - serviceName: project.siqa_git_2603.integrations:deepclonetest
   packages:
   - name: SIQA_GIT_2603Project
+    version: "1.0"
+  - name: JMS2waySSL
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -168,6 +226,8 @@ services:
 - serviceName: project.siqa_git_2603.integrations:testjms
   packages:
   - name: SIQA_GIT_2603Project
+    version: "1.0"
+  - name: JMS2waySSL
     version: "1.0"
   - name: DADA_GlobalVariable1
     version: "1.0"
@@ -228,6 +288,8 @@ configurationVariables:
   : "4"
   ? cloudstreamsconnection.project..siqa_git_2603..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth_v20.refreshToken
   : "{AES}iVEYOEICT1x7P9RL3dwVv0pQv1IODTw0Qm0vrSHPR8I0XZ0/KrBE7WODHo6AzR160DOPwKqbb3oMTCKFQlnaQ/g7JkyMztfW0zwKJm6lvFZuzitVA0hSa8yUlxGm0evN"
+  ? iscloudstreamsconnectorservice.project..siqa_git_2603..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..operations..actions:TestRest.connectionAlias
+  : project.siqa_git_2603.WmSalesforceRESTProvider.com_webmethods_cloudstreams_salesforce_rest_v60.connections:RestConnAlias
   ? artConnection.SIQA_GIT_2603Project.project.siqa_git_2603.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_2603.connectionManagerSettings.blockingTimeout
   : "1000"
   ? artConnection.SIQA_GIT_2603Project.project.siqa_git_2603.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_2603.connectionSettings.portNumber
@@ -247,6 +309,8 @@ configurationVariables:
   : "10"
   ? cloudstreamsconnection.project..siqa_git_2603..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth_v20.scope
   : offline_access api refresh_token
+  ? iscloudstreamsconnectorservice.project..siqa_git_2603..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..operations..actions:TestRest.virtualServiceName
+  : WmCloudStreams.RestVS
   ? artConnection.SIQA_GIT_2603Project.project.siqa_git_2603.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_2603.connectionSettings.user
   : siqatest
   ? cloudstreamsconnection.project..siqa_git_2603..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.poolIncrementSize
@@ -323,7 +387,7 @@ configurationVariables:
   ? cloudstreamsconnection.project..siqa_git_2603..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.keepAliveInterval
   : "300000"
   ? cloudstreamsconnection.project..siqa_git_2603..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.oauth.accessToken
-  : "{AES}bzO+KX5xKoE0CKrgiYZryJcjrxrt7HaM5972en7kZK9SYyS42n6ldW5j/rG7lC2wMUXCKBFvxvnkOBenvrq9ixQAEinqPrEaOxmwaF7Bpolfpn/3YJoMYdyrBIK7WSkuYfRpq04bdGvWTG5R62N0rGmK1wuN3U1rA1B0VhuZoUw="
+  : "{AES}bzO+KX5xKoE0CKrgiYZryE2fW+I/MnxhYw//pKkH0WFrS7ODLc+0oFYOvt32ocTwWGkW0noAr4IqlA+D4UFTlh6HzLKjQ+OZKySH6pDmMqmkjIQ1MjBSE+k8IOtiffJYAp/S588EMY0SByJs2WZNhGmK1wuN3U1rA1B0VhuZoUw="
   ? artConnection.SIQA_GIT_2603Project.project.siqa_git_2603.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_1_2603.connectionSettings.serverName
   : 9.46.196.248
   ? cloudstreamsconnection.project..siqa_git_2603..WmSalesforceRESTProvider..com_webmethods_cloudstreams_salesforce_rest_v60..connections:RestConnAlias.cn.providerUrl
