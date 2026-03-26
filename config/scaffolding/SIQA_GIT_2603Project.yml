@@ -18,6 +18,12 @@ packages:
   gitUsername: manoj-jannu-IBM
   gitBranch: main
 - name: DADA_GlobalVariable1
+  version: "1.0"
+  gitServerName: SIQAGitHub
+  gitUrl: https://github.com/manoj-jannu-IBM
+  gitUsername: manoj-jannu-IBM
+  gitBranch: main
+- name: SIQACloudStreamsTests
   gitServerName: SIQAGitHub
   gitUrl: https://github.com/manoj-jannu-IBM
   gitUsername: manoj-jannu-IBM
@@ -35,6 +41,10 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_git_2603.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:TestDB
   packages:
   - name: SIQA_GIT_2603Project
@@ -47,6 +57,10 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_git_2603.integrations:Test_AdapterSacffolding
   packages:
   - name: SIQA_GIT_2603Project
@@ -59,6 +73,10 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: project.siqa_git_2603.integrations:testjms
   packages:
   - name: SIQA_GIT_2603Project
@@ -71,6 +89,10 @@ services:
     version: 10.3.0.0.34
     wpmServer: https://packages.webmethods.io
     wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
 - serviceName: publisher:publisher
   packages:
   - name: JMSTest
