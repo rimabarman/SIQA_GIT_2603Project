@@ -62,6 +62,30 @@ services:
     version: 12.0.0.0.17
   - name: SIQACloudStreamsTests
     version: "1.0"
+- serviceName: project.siqa_git_2603.integrations:Sum
+  packages:
+  - name: SIQA_GIT_2603Project
+    version: "1.0"
+  - name: DADA_GlobalVariable1
+    version: "1.0"
+  - name: SIQAJDBCAdapterTests
+    version: "1.0"
+  - name: WmJDBCAdapter
+    version: 10.3.0.0.34
+    wpmServer: https://packages.webmethods.io
+    wpmRegistry: licensed
+  - name: WmSalesforceProvider
+    version: 12.0.0.0.17
+  - name: SIQACloudStreamsTests
+    version: "1.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.807
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.807
 - serviceName: project.siqa_git_2603.integrations:Test_AdapterSacffolding
   packages:
   - name: SIQA_GIT_2603Project
@@ -103,6 +127,10 @@ services:
   - name: WmPublic
     version: 12.1.0.0.807
 - serviceName: pub.string:bytesToString
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.807
+- serviceName: pub.alert:emit
   packages:
   - name: WmPublic
     version: 12.1.0.0.807
